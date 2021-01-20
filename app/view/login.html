@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sistema de Login em PHP
+        </title>
+        <link rel="stylesheet" href="http://localhost/sistema-login/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="box_login">
+            <div class="camada1">
+                <div class="capa">
+                
+                </div>
+            </div>
+            <div class="camada2">
+                <div class="formulario">
+                   <h1>Faça seu login:</h1>
+                   <form method="POST" action="http://localhost/sistema-login/login/check">
+                        <input type="email" name="email" placeholder="E-mail"/>
+                        <input type="password" name="senha" placeholder="Senha" />
+
+                        <button class="btn-login">Autenticar</button>
+
+                        {% if error != '' %}
+                            <span class="msg_error"><i class="fas fa-exclamation-triangle" style="padding-right: 5px;"></i> Tentativa inválida</span>
+                            {% endif %}
+                    </form>
+                </div>
+            </div>
+            <div class="camada3">
+                <div class="rodape">
+                    <p>Versão 0.1b</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

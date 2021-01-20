@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3399FF;
+    font-family: 'Arial';
+}
+
+.box_login {
+    width: 500px;
+    height: 500px;
+    background-color: #F3EFE0;
+    border: 0;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.box_login .camada1 {
+    background-color: #F3EFE0;
+    border-radius: 10px 10px 10px 10px;
+}
+.box_login .camada2 {
+    background-color: #217C7E;
+}
+.box_login .camada3 {
+
+}
+
+.box_login .capa {
+    height: 230px;
+    z-index: 1;
+    background: url(../img/background-box-login.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.box_login .formulario {
+    height: 280px;
+    z-index: 2;
+    background-position-y: -30px;
+    background-color: #F3EFE0;
+    color: #9A3334;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.box_login .formulario h1 {
+    font-size: 20px;
+    color: #217C7E;
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.box_login .formulario form label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box_login .formulario form input {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    font-size: 16px;
+    text-align: center;
+    height: 45px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px 10px 10px 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #217C7E;
+    font: 12px verdana, arial, sans-serif;
+ }
+ 
+ :-moz-placeholder {
+    color: #217C7E;
+    font: 12px verdana, arial, sans-serif;
+ }
+ 
+ ::-moz-placeholder {
+    color: #217C7E;  
+    font: 12px verdana, arial, sans-serif;
+ }
+ 
+ :-ms-input-placeholder {  
+    color: #217C7E;  
+    font: 12px verdana, arial, sans-serif;
+ }
+
+.box_login .formulario form .btn-login {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    font-size: 16px;
+    height: 40px;
+    background: #3399FF;
+    color: #FFF;
+    border: 0;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.msg_error {
+    color: #FF6D6D;
+    display: flex;
+    justify-content: center;
+}
+
+.box_login .rodape {
+    height: 60px;
+    z-index: 3;
+    background-color: #217C7E;
+    color: #F3EFE0;
+    padding: 28px;
+    text-align: right;
+    border-radius: 0px 0px 10px 10px;
+}
